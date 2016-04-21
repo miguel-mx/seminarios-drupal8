@@ -2,16 +2,25 @@
     <h1>Seminarios de la semana CCM</h1>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2></h2>
-    </div>
-    <div class="col-md-4">
-        <h2></h2>
-    </div>
-    <div class="col-md-4">
+{% for evento in seminarios.evento %}
 
+    <div class="row">
+        <div class="col-md-12">
+            {{ evento.seminario }}
+            <h4>{{ evento.titulo }}</h4>
+            <strong>{{ evento.ponente }}</strong> - <em>{{ evento.origen }}</em> <br>
+            {% if evento.resumen %}
+                <div class="well-sm panel-primary">
+                    {{ evento.resumen }}
+                </div>
+            {% endif %}
+            {{ evento.fecha }} <br>
+            {{ evento.lugar }} <br>
+            {{ evento.hora }}
+        </div>
     </div>
-</div>
+    <div class="page-header"></div>
+{% endfor %}
 
-{{ dump(seminarios) }}
+
+
