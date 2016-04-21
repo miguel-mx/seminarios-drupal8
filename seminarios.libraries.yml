@@ -1,0 +1,5 @@
+seminarios-styles:
+  version: 8.0.0
+  css:
+    base:
+      css/ccm_seminarios.css: {}

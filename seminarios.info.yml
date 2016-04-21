@@ -1,0 +1,5 @@
+name: 'seminarios'
+type: 'module'
+description: 'Seminarios CCM'
+core: 8.x
+package: Custom
