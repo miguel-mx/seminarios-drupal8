@@ -26,6 +26,8 @@ function seminarios_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme()
  * @return mixed
+ *
+ * Template for SeminariosController
  */
 function seminarios_theme() {
   $theme['seminarios_ccm'] = [
